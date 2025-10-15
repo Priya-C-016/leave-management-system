@@ -1,0 +1,45 @@
+
+.admin-container{
+    padding:20px;
+    margin:40px auto;
+    max-width:900px;
+    background-color: #fefefe;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.admin-container h2{
+    margin-top:20px;
+    text-align: center;
+    color:#333;
+    margin-bottom: 25px;
+}
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+thead td{
+    padding:12px;
+    color:black;
+    background-color: #f7ca44;
+    border-bottom:1px solid #ddd;
+}
+td.Pending{
+    color:#fbbc05;
+}
+td.Approved{
+    color:#34a853;
+}
+td.Rejected{
+    color:#ea4335;
+}
+.btn{
+    margin-right:5px;
+    padding:6px 12px;
+    cursor:pointer;
+    border:none;
+    border-radius: 6px;
+}
+.btn:hover{
+    opacity: 0.8;
+}

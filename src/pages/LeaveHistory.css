@@ -1,0 +1,59 @@
+.leave-history-container{
+    padding:20px;
+    margin:40px auto;
+    /* max-width:1200px; */
+    width:900px;
+    background-color: #fefefe;
+    border-radius: 12px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.leave-history-container h2{
+    margin-bottom:25px;
+    color:#333;
+    font-weight:600;
+    text-align:center ;
+}
+table{
+    width:100%;
+    text-align:left;
+    border-collapse: collapse;
+    border-spacing:12px; 
+}
+thead th{
+    color:white;
+    padding:12px 20px;
+    background-color: #4285F4;
+    padding:10px;
+}
+tbody td{
+    padding:12px 20px;
+    color:#555;
+    border-bottom: 1px solid #ddd;
+}
+tbody tr:hover{
+    background-color: #e8f0fe;
+    transition:0.2s;
+}
+p{
+    text-align:center;
+    font-style: italic;
+    color:#666;
+}
+td:last-child{
+    font-weight:500;
+}
+td:last-child.Pending{
+    color:#fbbc05;
+}
+td:last-child.Approved{
+    color:#34a853;
+}
+td:last-child.Rejected{
+    color:#ea4335;
+}
+@media(max-width:765px){
+    .leave-history-container{
+        width:600px;
+    }
+}

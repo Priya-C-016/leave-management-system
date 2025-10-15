@@ -1,0 +1,22 @@
+.navbar{
+    padding:10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    border-radius:8px;
+    color:#fff;
+    background-color: #1f5f8b;
+}
+.nav-links button{
+    padding:6px 12px;
+    margin-left:12px;
+    background-color: #fff;
+    color:#1f5f8b;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    transition:background 0.5s;
+}
+.nav-links button:hover{
+    background: #e2f0ff;
+}
