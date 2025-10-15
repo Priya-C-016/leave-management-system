@@ -1,16 +1,87 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Leave Management System
+#### A simple mock leave management system built using react and vite, stroing data locally in the broswer via localstorage.This project allows employees to apply for leave,view leave history, and let's admin approves or reject leave requests.
 
-Currently, two official plugins are available:
+#### CheckPoint: This is mock system and does not use a backend server,all data is stored locally in the browser.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- Employee Login(Mock user)
+- Apply for leave
+- View leave History
+- Admin dashboard for approve/reject leave requests
+- Automatic leave Balance trcaking
+- LocalStorage-based mock database
+- Responsive UI
 
-## React Compiler
+## Tech Stack 
+- Frontend: React, Vite, CSS
+- Storage: LocalStorage(mock database)
+- Routing:React Router v6
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Mock User Credentials
+- Email: name@company.com
+- Passwrod: Priya@123
 
-## Expanding the ESLint configuration
+## Project Struture
+```
+leave-management-system/
+├─ public/                 # Static files
+├─ src/                    # React source code
+│  ├─ assets/              # Images and icons
+│  ├─ components/          # Reusable components
+│  ├─ pages/               # Pages like Dashboard, Admin, Login, LeaveForm
+│  ├─ utils/               # Utility functions
+│  ├─ App.jsx              # Main app routing
+│  └─ main.jsx             # App entry point
+├─ .gitignore
+├─ package.json
+├─ vite.config.js
+└─ README.md
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Whole File Structure
+```
+leave-management-system/
+├─ public/
+│  └─ vite.svg
+├─ src/
+│  ├─ assets/                # Images and icons
+│  │  ├─ show-svgrepo-com.svg
+│  │  └─ hide-svgrepo-com.svg
+│  ├─ components/            # Reusable components
+│  │  ├─ DashboardNav.jsx
+│  │  └─ LeaveBalance.jsx
+│  ├─ pages/                 # Application pages
+│  │  ├─ Admin.jsx
+│  │  ├─ DashBoard.jsx
+│  │  ├─ HomePage.jsx
+│  │  ├─ LeaveForm.jsx
+│  │  ├─ LeaveHistory.jsx
+│  │  └─ LoginPage.jsx
+│  ├─ utils/                 # Utility functions
+│  │  └─ Date.js
+│  ├─ App.jsx
+│  ├─ main.jsx
+│  ├─ index.css
+│  └─ App.css
+├─ .gitignore
+├─ package.json
+├─ package-lock.json
+└─ vite.config.js
+```
+
+## How to Run
+- Install Dependencies:
+```
+npm install
+```
+-Run development server:
+```
+npm run dev
+```
+-Open the app in browser via URL
+
+## Deployed ov vercel
+URL: https://leave-management-system-mu.vercel.app/
+## Author
+Made By Priya Chanchal 
